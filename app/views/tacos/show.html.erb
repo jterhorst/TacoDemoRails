@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @taco.name %>
+</p>
+
+<p>
+  <strong>Meat:</strong>
+  <%= @taco.meat %>
+</p>
+
+<p>
+  <strong>Layers:</strong>
+  <%= @taco.layers %>
+</p>
+
+<p>
+  <strong>Calories:</strong>
+  <%= @taco.calories %>
+</p>
+
+<p>
+  <strong>Has cheese:</strong>
+  <%= @taco.has_cheese %>
+</p>
+
+<p>
+  <strong>Has lettuce:</strong>
+  <%= @taco.has_lettuce %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @taco.details %>
+</p>
+
+<%= link_to 'Edit', edit_taco_path(@taco) %> |
+<%= link_to 'Back', tacos_path %>

@@ -17,13 +17,25 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  database: taco
+  host: localhost
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
+  username: taco
+  password: Tri.286S
 
 development:
   <<: *default
-  database: TacoDemo_development
+  database: taco_dev
+
+test:
+  <<: *default
+  database: taco_test
+
+production:
+  <<: *default
+  database: taco
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.

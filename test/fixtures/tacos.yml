@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  meat: MyString
+  layers: 1
+  calories: 1
+  has_cheese: false
+  has_lettuce: false
+  details: MyText
+
+two:
+  name: MyString
+  meat: MyString
+  layers: 1
+  calories: 1
+  has_cheese: false
+  has_lettuce: false
+  details: MyText
