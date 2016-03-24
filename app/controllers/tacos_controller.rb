@@ -1,6 +1,8 @@
 class TacosController < ApplicationController
   before_action :set_taco, only: [:show, :edit, :update, :destroy]
 
+  skip_before_action :verify_authenticity_token
+
   # GET /tacos
   # GET /tacos.json
   def index
